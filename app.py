@@ -33,7 +33,7 @@ def cargar_datos(ruta: Path) -> pd.DataFrame:
 
 def estilo(fig, formato_x: str | None = None, formato_y: str | None = None):
     """Estilo común: fondo limpio, sin leyenda, grilla suave y números en formato argentino."""
-    fig.update_layout(margin=dict(l=10, r=10, t=10, b=10), height=340, showlegend=False,
+    fig.update_layout(margin={"l": 10, "r": 10, "t": 10, "b": 10}, height=340, showlegend=False,
                       plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)", bargap=0.3,
                       separators=",.")  # coma decimal, punto de miles
     fig.update_xaxes(showgrid=False, title=None, tickformat=formato_x)
@@ -85,7 +85,7 @@ with izq:
     mensual["etiqueta"] = mensual["mes"].map(lambda m: etiqueta_mes[m])
     # Eje x con los nombres de mes en español (el formato de fecha de Plotly los muestra en inglés)
     fig = px.line(mensual, x="etiqueta", y=col, markers=True)
-    fig.update_traces(line=dict(color=AZUL, width=2.5), marker=dict(size=7),
+    fig.update_traces(line={"color": AZUL, "width": 2.5}, marker={"size": 7},
                       hovertemplate="%{x}<br>" + ("$ %{y:,.0f}" if col == "total" else "%{y:,} unidades") + "<extra></extra>")
     fig.update_yaxes(rangemode="tozero")
     st.plotly_chart(estilo(fig, formato_y="$,.2s" if col == "total" else ",d"))
