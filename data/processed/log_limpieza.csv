@@ -1,0 +1,10 @@
+paso,filas_antes,filas_despues,detalle
+Eliminar duplicados exactos,5120,5000,120 filas repetidas
+Unificar nombres,5000,5000,provincias y categorías unificadas
+Convertir fechas y montos,5000,5000,"4 formatos de fecha y montos '$ 1.234,50' convertidos"
+Excluir cantidades <= 0,5000,4975,25 pedidos con error de carga
+Completar precio unitario,4975,4975,99 precios calculados como total/cantidad
+Corregir totales inconsistentes,4975,4975,8 totales recalculados (diferencia de $ 4.150.116)
+Marcar provincia faltante,4975,4975,150 valores como 'Sin dato'
+Marcar medio_pago faltante,4975,4975,198 valores como 'Sin dato'
+Cliente faltante,4975,4975,100 pedidos sin cliente (se mantienen)
