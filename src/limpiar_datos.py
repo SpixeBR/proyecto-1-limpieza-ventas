@@ -243,7 +243,9 @@ def marcar_faltantes(df: pd.DataFrame, log: LogLimpieza) -> pd.DataFrame:
     for col in ("provincia", "categoria", "medio_pago"):
         n = df[col].isna().sum()
         if n:
-            df[col] = df[col].fillna("Sin dato")
+            # astype(object): una columna 100% vacía llega como float64 y
+            # pandas no admite rellenar float64 con texto.
+            df[col] = df[col].astype("object").fillna("Sin dato")
             log.registrar(f"Marcar {col} faltante", len(df), len(df), f"{n} valores como 'Sin dato'")
     n_cli = df["cliente_id"].isna().sum()
     log.registrar("Cliente faltante", len(df), len(df), f"{n_cli} pedidos sin cliente (se mantienen)")
