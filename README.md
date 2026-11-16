@@ -1,5 +1,6 @@
 # Sales Data Cleaning Pipeline & Dashboard — Argentine E-commerce
 
+[![Tests](https://github.com/SpixeBR/proyecto-1-limpieza-ventas/actions/workflows/tests.yml/badge.svg)](https://github.com/SpixeBR/proyecto-1-limpieza-ventas/actions/workflows/tests.yml)
 🇪🇸 [Leer en español](README.es.md)
 
 > **Portfolio project using simulated data.** The company and the data are fictional, but they reproduce the real-world problems of a messy e-commerce sales export.
@@ -58,7 +59,7 @@ In addition, Buenos Aires, CABA and Córdoba concentrate 68% of revenue, and Fri
 
 ## How to run
 
-Requires Python 3.11 or higher (dependencies are pinned to the versions tested on Python 3.14).
+Requires Python 3.12 or higher (dependencies are pinned to the versions tested on Python 3.14).
 
 ```bash
 git clone https://github.com/SpixeBR/proyecto-1-limpieza-ventas.git

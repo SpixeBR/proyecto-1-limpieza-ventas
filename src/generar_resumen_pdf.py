@@ -17,7 +17,7 @@ from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, Tabl
 
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
-from limpiar_datos import limpiar_ventas, parsear_monto  # noqa: E402
+from limpiar_datos import limpiar_ventas, parsear_monto
 
 AZUL = colors.HexColor("#1c5cab")
 GRIS = colors.HexColor("#52514e")

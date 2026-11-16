@@ -9,8 +9,13 @@ import pytest
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
 
-from limpiar_datos import (  # noqa: E402
-    ErrorDeDatos, leer_csv, limpiar_ventas, parsear_fecha, parsear_monto, validar_columnas,
+from limpiar_datos import (
+    ErrorDeDatos,
+    leer_csv,
+    limpiar_ventas,
+    parsear_fecha,
+    parsear_monto,
+    validar_columnas,
 )
 
 

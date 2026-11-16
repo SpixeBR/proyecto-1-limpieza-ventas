@@ -1,5 +1,6 @@
 # Pipeline de limpieza y dashboard de ventas — e-commerce argentino
 
+[![Tests](https://github.com/SpixeBR/proyecto-1-limpieza-ventas/actions/workflows/tests.yml/badge.svg)](https://github.com/SpixeBR/proyecto-1-limpieza-ventas/actions/workflows/tests.yml)
 🇬🇧 [Read in English](README.md)
 
 > **Caso de portfolio con datos simulados.** La empresa y los datos son ficticios, pero reproducen los problemas reales de una exportación de ventas de un e-commerce.
@@ -54,7 +55,7 @@ Además, Buenos Aires, CABA y Córdoba concentran el 68% de la facturación, y d
 
 ## Cómo usarlo
 
-Requiere Python 3.11 o superior (las dependencias están fijadas a las versiones probadas con Python 3.14).
+Requiere Python 3.12 o superior (las dependencias están fijadas a las versiones probadas con Python 3.14).
 
 ```bash
 git clone https://github.com/SpixeBR/proyecto-1-limpieza-ventas.git
